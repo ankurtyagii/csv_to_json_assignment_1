@@ -10,7 +10,7 @@ const csv_file_path = 'customer-data.csv'
 const input_file_stats = file_system.statSync(csv_file_path)
 const iFileSizeInBytes = input_file_stats.size
 
-if( iFileSizeInBytes < 1 ){
+if( iFileSizeInBytes < 5 ){
 	console.log('CSV input is empty.Please check.')
 	return false
 }
